@@ -16,9 +16,11 @@ public class ShortLinkModel {
     private Long id;
 
     //@Column(name = "long_url", nullable = false)
-    String long_Url;
+    String longUrl;
+
+    String sha256Value;
 
     // @Column(name = "short_url", nullable = false)
-    String short_url;
+    String shortUrl;
 
 }

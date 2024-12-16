@@ -25,7 +25,7 @@ public class ShortUrlService {
         String sha256Value = convertToSHA256(longUrl);
         String shortUrl = getBase62Value(sha256Value);
         saveUrl(sha256Value,shortUrl, longUrl);
-        return shortUrl;
+        return "https://mini.com/" + shortUrl;
     }
 
     public ShortLinkModel getShortUrl(String longUrl){
